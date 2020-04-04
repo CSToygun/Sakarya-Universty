@@ -44,10 +44,20 @@
 
 - *Ayrıntılı proje bilgisi "Project-Documents" kısmında bulunmaktadır
 
+# Kullanılacak Teknolojiler
+ 
+- HTML
+- CSS
+- PHP
+- Javascript
+- Vue.js
+- Bootstrap
+- Sass
+
 # Proje Gelişimi
 
 - *1-* Temel hatlarıyla html dosyalarının hazırlanması
-- *2-* Gerekli tasarımların yapılması
+- *2-* Gerekli tasarımların  Sass-CSS ile yapılması
 - *3-* Vue.js ve Node.js gibi frammworklerin kullanılması
 
 -**PROJE GELİŞTİRİLDİKÇE YENİ ÖZELLİKLER ve SAYFALAR EKLENİP ÇIKARTILACAK ŞİMDİLİK ANA HATLARIYLA BÖYLE PLANLANMAKTADIR**
