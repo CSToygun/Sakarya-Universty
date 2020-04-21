@@ -1,0 +1,63 @@
+:root {    
+    background-color: #141414;
+    /*background-image: url('/WebTechnology/City-Web-Site-Project/Denizli.png');
+    background-repeat: no-repeat;
+    background-position: center;*/ 
+    --accent-color: rgb(20, 121, 0);
+  }
+  
+  a:hover {
+    color: var(--accent-color);
+  }
+div#menu {
+    padding-left: 10px;
+    list-style-type: none;
+    margin-top: 10px;
+    overflow: hidden; 
+    border-radius: 40px ;
+    background-color: rgb(9, 48, 1);
+  }
+  li {
+    list-style-type: none;  
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:10px;
+    text-decoration: none;
+  }
+  li a:hover {
+      border-radius: 40px ;
+      background-color: rgb(0, 0, 0);
+    
+  }
+  li.shr{
+    float: left;
+  }
+  li.iletisim{
+    float: right;
+    padding-right: 10px;
+ }
+ li.login{
+    float: right;
+ }
+ #denizli{
+    position: fixed;
+    left: 45%;
+ }
+ li.Hesap{
+  float: right;
+  padding-right: 10px;
+ }
+ li.Hakkinda{
+  float: right;
+ }
+ li.Ozgecmis{
+  float: right;
+ }
+ #kayanyazi{
+   color: blanchedalmond;
+   font-size: 12px;
+ }
