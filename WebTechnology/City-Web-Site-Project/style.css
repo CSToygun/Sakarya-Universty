@@ -1,63 +1,355 @@
-:root {    
-    background-color: #141414;
-    /*background-image: url('/WebTechnology/City-Web-Site-Project/Denizli.png');
-    background-repeat: no-repeat;
-    background-position: center;*/ 
-    --accent-color: rgb(20, 121, 0);
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+nav#menu {
+    padding-left: 10px;
+    padding-top: 0px;
+    list-style-type: none;
+    margin-top: 0.1%;
+    margin-left: 12px;
+    overflow: hidden; 
+    border-radius: 14px ;
+    background: -moz-linear-gradient(#111111,#093001,#111111);
+    background: -webkit-linear-gradient(#111111,#093001,#111111);
+    background: -o-linear-gradient(#111111,#093001,#111111);
+    position: fixed;
+    width: 97%;
+    top: 10px;
+  }
+  header.up{
+    background-image:url("/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png"),url("/WebTechnology/City-Web-Site-Project/Pictures/Denizlinin-gece-manzaras-334.jpg");
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  header #banner{
+    margin-left: 37%;
+    width: 20%;
+    position:absolute;
+    top: 30%;
+    text-align: center  ;
+    border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
+    background-color: #093001;
+    opacity: 80%;
+    padding: 10px;
+  }
+  header #banner h4{
+    font-style: oblique;
+    letter-spacing: 2px;
+  }
+  header #banner h5{
+    color: teal;
+    font-style: italic;
+  }
+  #bolum2{
+    width: 100%;
+    padding: 50px 0;
+    background-size: cover;
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+
+  }
+  .kapsayici{
+    width: 100%;
+    height: 70vh;
+  }
+  #bolum2 .kapsayici .sol{
+    width:400px;
+    float: left;
+    margin-left: 10%;
+
+  }
+  #bolum2 h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    margin-top: 40px;
+    font-weight: 300;
+    color: burlywood ;
+    line-height: 70px;
+  }
+  #bolum2 .sol p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 50;
+    line-height: 35px;
+
+  }
+  #bolum2 .kapsayici .sag{
+    width: 400px;
+    padding-right: 15%; 
+    float: right ; 
+  }
+  #bolum2 .kapsayici .sag article{
+    margin-top: 10%;
+    line-height: 40px;
+    color: teal;
+    margin-bottom: 10%;
+  }
+  #bolum3{
+    width: 100%;
+    height: 900px;
+    padding: 50px 0;
+    background-size: cover;
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    text-align: center;
+  }
+  #bolum3 .kapsayici2{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #bolum3 h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    margin-top: 40px;
+    font-weight: 300;
+    color: burlywood ;
+    line-height: 70px;
+  }
+  #bolum3 p{
+    margin: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: teal;
+  }
+  #bolum3 .image1{
+    width: 40%;
+    float: left;
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    margin-top: 50px;
+    margin-left: 80px;
+    border: 2px solid  #111111 ;
+    box-shadow: 1px 1px 8px #111111;
+  }
+  #bolum3 .image2{
+    width: 40%;
+    float: left;
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    margin: 50px 5%;
+    border: 2px solid  #111111 ;
+    box-shadow: 1px 1px 8px #111111;
+  }
+  #bolum3 img{
+    width: 100%;
+    margin: 0px;
+  }
+  #bolum4{
+    width: 100%;
+    height: 135vh;
+    padding: 50px 0;
+    background-size: cover;
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+  }
+  #bolum4 h2{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    margin-top: 40px;
+    font-weight: 300;
+    color: burlywood ;
+    line-height: 70px;
+    margin-left: 33%;
+  }
+  #bolum4 h2+p{
+    margin: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 9%;
+    padding-right: 9%;
+    color: teal;
+    text-align: right;
   }
   
-  a:hover {
-    color: var(--accent-color);
+  #bolum4 .bolumler{
+    width: 45%;
+    height: 40vh;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-left: 2%;
+    border: 2px solid  #111111 ;
+    box-shadow: 1px 1px 8px #111111;
   }
-div#menu {
-    padding-left: 10px;
-    list-style-type: none;
-    margin-top: 10px;
-    overflow: hidden; 
-    border-radius: 40px ;
-    background-color: rgb(9, 48, 1);
+
+  #bolum4 .bolumler .kucukresim{
+    float: right;
+    height: 25vh;
+    width: 25vh;
+    padding-right: 25px;
+    padding-top: 8%;
   }
-  li {
+  #bolum4 .bolumler .kucukresim img{
+    border: 5px solid #126d00;
+    border-radius: 100%;
+    height: 25vh;
+    width: 25vh;
+  }
+  #bolum4 .bolumler .yazi h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: burlywood ;
+    padding-top: 15px;
+
+  }
+
+  #bolum4 .bolumler .yazi h5{
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1% ;
+    color: teal;
+  }
+  #bolum4 .bolumler:nth-child(2n) .kucukresim{
+    float: left;
+  }
+  #bolum5{
+    background-image:url("/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png"),url("/WebTechnology/City-Web-Site-Project/Pictures/Denizlispor.jpg" );
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 120vh;
+  }
+  #bolum5 #banner2{
+    margin-left: 25%;
+    width: 40%;
+    position:absolute;
+    top: 40%;
+    text-align: center  ;
+    border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
+    background-color: #093001;
+    opacity: 75%;
+    padding: 10px;
+  }
+  #bolum5 #banner2 h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    margin-top: 20px;
+    font-weight: 300;
+    color: burlywood ;
+    line-height: 70px;
+    margin-left: 6%;
+  }
+  #bolum5 #banner2 h4{
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1% ;
+    color: teal;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  nav ul li {
     list-style-type: none;  
     float: left;
   }
-  li a {
+  nav ul li a {
     display: block;
     color: white;
     text-align: center;
     padding:10px;
+    border-radius: 14px ;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 85px;
   }
-  li a:hover {
-      border-radius: 40px ;
+  nav ul li a:hover {
+      border-radius: 25px ;
       background-color: rgb(0, 0, 0);
+      color: #178101;
+      transition-duration: 0.7s;
     
   }
-  li.shr{
+  nav ul li ul{
+    display: none;
+  position: fixed;
+  }
+  nav ul li:hover ul{
+    display: block;
+    width: 20px;
+
+  }
+  nav ul li ul li a{
+    display: block;
+    width: 85px;
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    -moz-margin-top: 10px;
+    -o-margin-top: 10px;
+    -webkit-margin-top: 10px;
+    -ms-margin-top: 10px;
+    margin-top: 1px;
+  }
+  nav ul li ul li a:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  nav ul li.shr{
     float: left;
   }
-  li.iletisim{
+  nav ul li.iletisim{
     float: right;
     padding-right: 10px;
  }
- li.login{
+ nav ul li.login{
     float: right;
  }
  #denizli{
+    -webkit-position: fixed;
+    -o-position: fixed;
+    -ms-position: fixed;
+    -moz-position: fixed;
     position: fixed;
     left: 45%;
  }
- li.Hesap{
+ nav ul  li.Hesap{
   float: right;
   padding-right: 10px;
  }
- li.Hakkinda{
+ nav ul  li.Hakkinda{
   float: right;
  }
- li.Ozgecmis{
+ nav ul  li.Ozgecmis{
   float: right;
  }
  #kayanyazi{
-   color: blanchedalmond;
-   font-size: 12px;
+   padding-top: 5%;
+   background: none;
+   color:rgb(7, 88, 0);
+   font-size: 15px;
+ }
+ div#kapsayici{
+    height: 600px;
+    width: 200px;
  }
