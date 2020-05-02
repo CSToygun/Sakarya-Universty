@@ -3,30 +3,79 @@
     <head>
         <title>HOSGELDINIZ</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/style.css">
+        <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/iletisim.css">
+        <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
         <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+        <script src="/WebTechnology/City-Web-Site-Project/Js/iletisim.js"></script>
     </head> 
 <body>
-    <nav id="menu">
-        <ul>
-            <li class="shr"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
-                <ul>
-                    <li><a href="#">Nüfus</a></li>
-                    <li><a href="#">Coğrafi Özellikleri</a></li>
-                    <li><a href="#">Spor Klüpleri</a></li>
-                </ul>
-            </li>
+    <header class="up">
+        <nav id="menu">
+             <ul class="ul">
+                <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
+                    <ul class="ul2">
+                        <li class="li2"><a href="#"  class="a">Nüfus</a></li>
+                        <li class="li2"><a href="#"  class="a">Coğrafi Özellikleri</a></li>
+                        <li class="li2"><a href="#" class="a" >İlçeleri</a></li>
+                        <li class="li2"><a href="#"  class="a">Spor Klüpleri</a></li>
+                    </ul>
+                </li>
         
-            <li class="shr"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a></li>
-            <li id="denizli"><a href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-            <li class="iletisim"><a href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
-            <li class="login" ><a href="/WebTechnology/City-Web-Site-Project/Pages/login.html">Login</a></li>
-        </ul>
-    </nav>
-    <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
-    <div id="kapsayici">
-
-
-   </div>
+                <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
+                    <ul class="ul2">
+                        <li class="li2"><a href="#"  class="a">Tarihçesi</a></li>
+                        <li class="li2"><a href="#"  class="a">Kültürel Değerler</a></li>
+                        <li class="li2"><a href="#" class="a" >Gelenekleri</a></li>
+                        <li class="li2"><a href="#"  class="a">Yöresel Kıyafetleri</a></li>
+                    </ul>
+                </li>
+                <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
+                <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
+                <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
+            </ul>
+        </nav>
+        <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
+    <div class="container">
+        <form id="contact" action="iletisimVeriler.php" method="POST" onsubmit="iletisimButton()"> /*  */
+            <h2>İletişim Sayfası</h2>
+            <div class="form-control">
+                <input id="isim" placeholder="Adınız Soyadınız" type="text" required autofocus name="isim" >
+            </div>
+            <div class="form-control">
+                <input placeholder="E-Posta Adresiniz" type="email" name="mail" required >
+            </div>
+            <div class="form-control">
+                <i>Cinsiyetiniz :</i>
+                <input type="radio" name="cinsiyet" value="erkek" checked> <i> Erkek </i> 
+                <input type="radio" name="cinsiyet" value="kadin"> <i> Kadın</i>
+            </div>
+            <div class="form-control">
+                <select name="Memleket">
+                    <option value="Denizli" >Denizli</option>
+                    <option value="Istanbul">İstabul</option>
+                    <option value="Sakarya" >Sakarya</option>
+                    <option value="Adana" >Adana</option>
+                </select>
+            </div>
+            <div class="form-control">
+				<strong> : Hobileriniz :</strong>
+				<br>
+                <input type="checkbox" name="hobi[]" value="kodlama" checked><i> Kodlama</i>
+                <input type="checkbox" name="hobi[]" value="dans" ><i> Dans</i>
+                <input type="checkbox" name="hobi[]" value="music" > <i> Müzik</i>
+            </div>
+            
+            <div class="form-control">
+                <input placeholder="Konu" type="text" required name="konu">
+            </div>
+            <div class="form-control">
+                <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required name="adres"></textarea>
+            </div>
+            <div class="form-control">
+                <button name="submit" type="submit" id="submit" >GÖNDER</button>
+                <input type="reset" value="Temizle" id="submit"/>
+            </div>
+        </form>
+    </div>
 </body>
-</html>,    
+</html>  

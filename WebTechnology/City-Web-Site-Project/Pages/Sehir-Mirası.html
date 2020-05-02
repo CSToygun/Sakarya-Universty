@@ -1,47 +1,151 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
         <title>HOSGELDINIZ</title>
-        <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/style.css">
-        <!-- Bootstrap CSS -->
-        <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+         <!-- Required meta tags -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , maximum-scale=1">  
+         <title>HOSGELDINIZ</title>
+         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
+         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/SehirMirasi.css">
+         <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+         <script src="/WebTechnology/City-Web-Site-Project/Js/SehirMirası.js" type="text/javascript"></script>
     </head> 
-<body>
-    <nav id="menu">
-        <ul>
-            <li class="shr"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
-                <ul>
-                    <li><a href="#">Nüfus</a></li>
-                    <li><a href="#">Coğrafi Özellikleri</a></li>
-                    <li><a href="#">Spor Klüpleri</a></li>
+
+    <body onload="plusSlides(0)" onload="showSlides2(1)">
+        <header class="up">
+            <nav id="menu">
+                 <ul class="ul">
+                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
+                        <ul class="ul2">
+                            <li class="li2"><a href="#"  class="a">Nüfus</a></li>
+                            <li class="li2"><a href="#"  class="a">Coğrafi Özellikleri</a></li>
+                            <li class="li2"><a href="#" class="a" >İlçeleri</a></li>
+                            <li class="li2"><a href="#"  class="a">Spor Klüpleri</a></li>
+                        </ul>
+                    </li>
+            
+                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
+                        <ul class="ul2">
+                            <li class="li2"><a href="#"  class="a">Tarihçesi</a></li>
+                            <li class="li2"><a href="#"  class="a">Kültürel Değerler</a></li>
+                            <li class="li2"><a href="#" class="a" >Gelenekleri</a></li>
+                            <li class="li2"><a href="#"  class="a">Yöresel Kıyafetleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
+                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
+                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
                 </ul>
-            </li>
-        
-            <li class="shr"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
-                <ul>
-                    <li><a href="#">Tarihçesi</a></li>
-                    <li><a href="#">Kültürel Değerler</a></li>
-                    <li><a href="#">Gelenekleri</a></li>
-                    <li><a href="#">Yöresel Kıyafetleri</a></li>
-                </ul>
-            </li>
-            <li id="denizli"><a href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-            <li class="iletisim"><a href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
-            <li class="login" ><a href="/WebTechnology/City-Web-Site-Project/Pages/login.html">Login</a></li>
-        </ul>
-    </nav>
-    <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
-    <div id="kapsayici">
+            </nav>
+            <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
+
+                <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <a href="#bolum2"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Pamukkale2.png"  ></a>
+                    <div class="text"> Pamukkale </div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="#bolum2"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Hieropolis.jpg" ></a>
+                    <div class="text"> Hierapolis</div>
+                </div>
+                 <div class="mySlides fade">
+                    <img src="/WebTechnology/City-Web-Site-Project/Pictures/BuldanEvleri.jpg" >
+                    <div class="text"> Buldan Evleri</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="/WebTechnology/City-Web-Site-Project/Pictures/DenizliHORozu.png" >
+                    <div class="text"> Denizli Horozu</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="/WebTechnology/City-Web-Site-Project/Pictures/Tavas-Efeler-zeybek.jpg" >
+                    <div class="text"> Tavas Efeler Zeybeği</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="/WebTechnology/City-Web-Site-Project/Pictures/ZaferGazoz.jpg" >
+                    <div class="text"> Zafer Gazozu </div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center; position: relative; top: 93%;" t>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>                
+        </header>
+
+        <section id="bolum1">
+            <div class="kapsayici">
+                <div class="sol">
+                    <h2>Denizlinin Tarihçesi</h2>
+                    <p>Denizli'de 1876 yılında ilk <strong> <i> Belediye Teşkilatı kurulmuştur.</i></strong> <br>
+                        1883'te Sarayköy, Buldan ve Tavas İlçelerinin bağlanmasıyla "Sancak" haline getirilen Denizli, 1884'te Çal, 
+                        1888'de Acıpayam ilçelerinin katılımıyla Aydın'a bağlı mutasarrıflık, 
+                        <strong>Cumhuriyeti'nin kuruluşuyla da 1923'te il olmuştur. </strong>  </p>
+
+                </div>
+                <div class="sag">
+                    <article>
+                        Denizli adına, tarihi kaynaklarda başka başka isimler olarak rastlamaktayız. 
+                         İbni Batuta'nın seyahatnamesinde Tunguzlu denilmektedir. 
+                        Mesalikullebsar'da da Tunguzlu olarak kaydedilmiştir.<br></br>
+
+                        Denizli ve havalisinde Türkler ilk defa 1070 yılında görüldüler. 
+                        Afşin Bey bütün Anadolu'yu kastettikten sonra Laodikya'yı yağma ederek, Honaz'ı zaptetmiştir. <br><br>
+                        1071 yılından sonra Denizli ve çevresi Kutalmışoğlu Süleyman Şah'in mahiyetindeki beyler tarafından fethedilmiştir.<br>
+ 
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <section id="bolum2">
+            <div class="mySlides2 fade">
+                <a href="https://en.wikipedia.org/wiki/Pamukkale"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Pamukale2.jpg" ></a>
+                <div id="pamukkale">
+                    <h2> Pamukgibi Şifa   <strong>"Pamukkale"</strong></h2>   
+    
+                    <h4><br><strong> Kent Kaplıcaları ve akan sulardan kalan karbonat mineralleri sayesinde bembeyaz bir cennet haline gelmiştir</strong><br><br></h4>
+                       
+                    <p>Eski Hierapolis kenti bem beyaz "kalenin" üzerine inşa edilmişti. Denizli'nin 20 km uzaktaki merkezindeki vadinin karşı tarafındaki tepelere kurulmuştur. Hemen arkasında Laodikya antik kenti bulunur. 5 km ilerisinde ise uluslararası bir termal merkez olan Karahayıt köyü vardır. Pamukkale <i>UNESCO </i>tarafından belirlenen Dünya Miras Listesi'nde yer almaktadır. Travertenler görsel zenginliğin yanı sıra <strong id="Str1"> kalp rahatsızlıkları, romatizma, sindirim, solunum, dolaşım ve deri rahatsızlıklarına </strong> iyi gelmektedi</p>
+                </div>
+            </div>
+            <div class="mySlides2 fade">
+                <a href="https://en.wikipedia.org/wiki/Hierapolis"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Leodikya.jpg" ></a>
+                <div id="pamukkale">
+                    <h2> Tarihi Şehir  <strong>"Leodikya"</strong> </h2>   
+    
+                    <h4><br><strong> Kent Kaplıcaları ve akan sulardan kalan karbonat mineralleri sayesinde bembeyaz bir cennet haline gelmiştir</strong><br><br></h4>
+                       
+                    <p>Eski Hierapolis kenti bem beyaz "kalenin" üzerine inşa edilmişti. Denizli'nin 20 km uzaktaki merkezindeki vadinin karşı tarafındaki tepelere kurulmuştur. Hemen arkasında Laodikya antik kenti bulunur. 5 km ilerisinde ise uluslararası bir termal merkez olan Karahayıt köyü vardır. Pamukkale <i>UNESCO </i>tarafından belirlenen Dünya Miras Listesi'nde yer almaktadır. Travertenler görsel zenginliğin yanı sıra <strong id="Str1"> kalp rahatsızlıkları, romatizma, sindirim, solunum, dolaşım ve deri rahatsızlıklarına </strong> iyi gelmektedi</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+        <br>
+    <!-- The dots/circles -->
+
+    <div style="text-align:center; position: relative; top: 93%;" t>
+        <span class="dot" onclick="currentSlide2(1)"></span>
+        <span class="dot" onclick="currentSlide2(2)"></span>
+    </div>                
+
+        </section>
 
 
-   </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>,    
+      
+                                        
+</html>
