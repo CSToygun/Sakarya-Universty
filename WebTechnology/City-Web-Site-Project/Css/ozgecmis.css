@@ -1,0 +1,31 @@
+body{
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+      background: -webkit-linear-gradient(#000000,#093001,#000000);
+      background: -o-linear-gradient(#000000,#093001,#000000);
+}
+    
+.egitim{
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    padding-left: 4vh;
+    margin-right: 4vh;
+
+}
+.row{
+    border: 1px solid black; 
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    box-shadow: 6px 6px 7px grey;
+    padding-top: 10vh;
+}
+.col-2{
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+    color: white;
+}
+.col-2 i{
+    color: teal;
+}

@@ -21,7 +21,7 @@ align-content: center;
 }
 
 .card{
-height: 45vh;
+height: 52vh;
 margin-top: auto;
 margin-bottom: auto;
 width: 60vh;
@@ -76,4 +76,18 @@ width: 100px;
 .login_btn:hover{
 color: black;
 background-color: #093001;
+}
+.container .d-flex .card .card-body .form-group p{
+    margin-top: 18%;
+    text-align: center;
+    background-color:#168500 ;
+    opacity: 70%;
+    color: #f70000;
+}
+.container .d-flex .card .card-body .form-group p[id="2p"]{
+    margin-top: 1%;
+    text-align: center;
+    background-color:#168500 ;
+    opacity: 70%;
+    color: #f70000;
 }

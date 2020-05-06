@@ -13,9 +13,14 @@
       text-align: center  ;
       border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
       background-color: #093001;
-      opacity: 80%;
+      opacity: 95%;
       padding: 10px;
     }
+    header #banner h2{
+      color: burlywood;
+      font-weight: 500;
+    }
+
     header #banner h4{
       font-style: oblique;
       letter-spacing: 2px;
