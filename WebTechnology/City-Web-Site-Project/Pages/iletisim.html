@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HOSGELDINIZ</title>
+        <title>ILETISIM</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/iletisim.css">
         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
@@ -36,13 +36,13 @@
         </nav>
         <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
     <div class="container">
-        <form id="contact" action="iletisimVeriler.php" method="POST" onsubmit="iletisimButton()"> /*  */
+        <form id="contact" action="iletisimVeriler.php" method="POST"  name="iletisimform" onsubmit="return epostaValid()" > 
             <h2>İletişim Sayfası</h2>
             <div class="form-control">
                 <input id="isim" placeholder="Adınız Soyadınız" type="text" required autofocus name="isim" >
             </div>
             <div class="form-control">
-                <input placeholder="E-Posta Adresiniz" type="email" name="mail" required >
+                <input placeholder="E-Posta Adresiniz" type="email" name="mail"  required >
             </div>
             <div class="form-control">
                 <i>Cinsiyetiniz :</i>
@@ -66,7 +66,7 @@
             </div>
             
             <div class="form-control">
-                <input placeholder="Konu" type="text" required name="konu">
+                <input placeholder="Konu" type="text" required name="konu" name="text3">
             </div>
             <div class="form-control">
                 <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required name="adres"></textarea>

@@ -6,20 +6,25 @@
              <!-- Required meta tags -->
              <meta charset="utf-8">
              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , maximum-scale=1">  
-            <!--Bootsrap 4 CDN-->
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
-            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            
-            <!--Fontawesome CDN-->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
             <!--Custom styles-->
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/index.css">
          <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
     </head> 
 <body>
+        <?php
+            $kullanici = "g191210378@sakarya.edu.tr";
+            $parola="ibrahimsaid";
+              if( $kullanici == $_POST['kullanici'] && $parola == $_POST['parola']) 
+			{
+                echo "<script language='javascript'> alert('Sayın : $kullanici --- Hoşgeldiniz...') </script>";            
+            }
+            else {
+                echo "<script language='javascript'> alert('Kullanıcı Bilgilerinizi Yanlış Girdiniz. Tekrar Yönlendiriliyorsunuz...') </script>";
+			    header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");;
+			}
+
+        ?>
         <header class="up">
             <nav id="menu">
                  <ul class="ul">
@@ -41,11 +46,24 @@
                         </ul>
                     </li>
                     <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
-                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
+                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Hesabim.php">Hesabım</a></li>
+                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Ozgecmis.html">Ozgecmis</a>
+                        <ul class="ul2">
+                            <li class="li2"><a href="#"  class="a">Egitim Hayatı</a></li>
+                            <li class="li2"><a href="#"  class="a">Hayalleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/hakkımda.html">Hakkımda</a>
+                        <ul class="ul2">
+                            <li class="li2"><a href="#"  class="a">Çocuklugu</a></li>
+                            <li class="li2"><a href="#"  class="a">Hobileri</a></li>
+                            <li class="li2"><a href="#"  class="a">Resimleri</a></li>
+                        </ul>
+                    </li>
             </nav>
             <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
         </header>
+        
 
     <div id="particle-canvas">
         <script src="/WebTechnology/City-Web-Site-Project/Js/particle.js"></script>
@@ -56,5 +74,10 @@
         </div> 
     </div>
 </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
 

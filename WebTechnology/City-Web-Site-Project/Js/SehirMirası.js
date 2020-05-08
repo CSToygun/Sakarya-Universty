@@ -1,17 +1,17 @@
 var slideIndex = 1;
-showSlides(slideIndex);
+gosterSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function degistirSlides(n) {
+  gosterSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  gosterSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function gosterSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -28,19 +28,19 @@ function showSlides(n) {
 }
 /*-------------------------------------2.Slider ----------------------------------------------------------------*/
 var slideIndex2 = 1;
-showSlides2(slideIndex2);
+gosterSlides2(slideIndex2);
 
 // Next/previous controls
-function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
+function degistirSlides2(n) {
+  gosterSlides2(slideIndex2 += n);
 }
 
 // Thumbnail image controls
 function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
+  gosterSlides2(slideIndex2 = n);
 }
 
-function showSlides2(n) {
+function gosterSlides2(n) {
   var j;
   var slides2 = document.getElementsByClassName("mySlides2");
   var dots2 = document.getElementsByClassName("dot");

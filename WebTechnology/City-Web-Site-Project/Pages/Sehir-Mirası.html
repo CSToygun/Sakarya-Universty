@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HOSGELDINIZ</title>
+        <title>MIRASIMIZ</title>
          <!-- Required meta tags -->
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , maximum-scale=1">  
@@ -12,7 +12,7 @@
          <script src="/WebTechnology/City-Web-Site-Project/Js/SehirMirası.js" type="text/javascript"></script>
     </head> 
 
-    <body onload="plusSlides(0)" onload="showSlides2(1)">
+    <body onload="currentSlide(1);currentSlide2(1)" >
         <header class="up">
             <nav id="menu">
                  <ul class="ul">
@@ -68,12 +68,10 @@
                     <img src="/WebTechnology/City-Web-Site-Project/Pictures/ZaferGazoz.jpg" >
                     <div class="text"> Zafer Gazozu </div>
                 </div>
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="degistirSlides(-1)">&#10094;</a>
+                <a class="next" onclick="degistirSlides(1)">&#10095;</a>
             </div>
             <br>
-            <!-- The dots/circles -->
             <div style="text-align:center; position: relative; top: 93%;" t>
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -84,8 +82,8 @@
             </div>                
         </header>
 
-        <section id="bolum1">
-            <div class="kapsayici">
+        <section id="bolum1" >
+            <div class="kapsayici" >
                 <div class="sol">
                     <h2>Denizlinin Tarihçesi</h2>
                     <p>Denizli'de 1876 yılında ilk <strong> <i> Belediye Teşkilatı kurulmuştur.</i></strong> <br>
@@ -109,7 +107,7 @@
 
             </div>
         </section>
-        <section id="bolum2">
+        <section id="bolum2" onload="currentSlide2(1)">
             <div class="mySlides2 fade">
                 <a href="https://en.wikipedia.org/wiki/Pamukkale"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Pamukale2.jpg" ></a>
                 <div id="pamukkale">
@@ -130,21 +128,205 @@
                     <p>Eski Hierapolis kenti bem beyaz "kalenin" üzerine inşa edilmişti. Denizli'nin 20 km uzaktaki merkezindeki vadinin karşı tarafındaki tepelere kurulmuştur. Hemen arkasında Laodikya antik kenti bulunur. 5 km ilerisinde ise uluslararası bir termal merkez olan Karahayıt köyü vardır. Pamukkale <i>UNESCO </i>tarafından belirlenen Dünya Miras Listesi'nde yer almaktadır. Travertenler görsel zenginliğin yanı sıra <strong id="Str1"> kalp rahatsızlıkları, romatizma, sindirim, solunum, dolaşım ve deri rahatsızlıklarına </strong> iyi gelmektedi</p>
                 </div>
             </div>
+            <div class="mySlides2 fade">
+                <a href="https://en.wikipedia.org/wiki/Hierapolis"><img src="/WebTechnology/City-Web-Site-Project/Pictures/BuldanEvleri.jpg"></a>
+                <div id="pamukkale">
+                    <h2> Rengarenk İlçe  <strong>"Babadağ"</strong> </h2>   
+    
+                    <h4><br><strong> Denizli'nin "tekstilin vatanı" olarak bilinen Babadağ ilçesinde belediye, iş adamları derneği ve üniversite iş birliğiyle yürütülen proje kapsamında, ilçedeki 100 tarihi ev aslına uygun restore edilerek dış cepheleri rengarenk boyandı.</strong><br><br></h4>
+                       
+                    <p>Coğrafyaya uyumlu inşa edilen ve zamana adeta meydan okuyan evlerin renklendirilmesiyle dikkat çekmeye başladığını ifade eden Belediye Başkanı Akakça, "Her ev fonksiyonel olarak kullanılıyor hem tezgah hem yaşam alanı ve hem de kültürün kucak kucağa olduğu evler. Son zamandaki boyama işi ise fotografik açıdan yöreye insanların gelmesi ve göz zevki açısından ayrı bir güzellik kattı." ifadelerini kullandı. </strong> iyi gelmektedi</p>
+                </div>
             </div>
-        </div>
-        <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-        <br>
-    <!-- The dots/circles -->
-
-    <div style="text-align:center; position: relative; top: 93%;" t>
-        <span class="dot" onclick="currentSlide2(1)"></span>
-        <span class="dot" onclick="currentSlide2(2)"></span>
-    </div>                
+                    <a class="prev" onclick="degistirSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="degistirSlides2(1)">&#10095;</a>
+                <br>
+            <div style="text-align:center; margin-top: -3%;" >
+                <span class="dot" onclick="currentSlide2(1)"></span>
+                <span class="dot" onclick="currentSlide2(2)"></span>
+                <span class="dot" onclick="currentSlide2(3)"></span>
+            </div>                
         </section>
-        https://youtu.be/SE9kkXHTcFI
+         <!-------3.Bolum ------  Bu bolumden sonrafarklı bir çalışma olarak kodlar ayrı css dosyası yerine tagların iine yazılacaktır ----------------------------------> 
 
-      
+        <section id="bolum3" style=" width: 100%;height: 135vh; margin-top: 120vh;
+         background: -moz-linear-gradient(#000000,#093001,#000000);
+            background: -webkit-linear-gradient(#000000,#093001,#000000);
+            background: -o-linear-gradient(#000000,#093001,#000000);">
+            <h2 style="font-size: 300%;
+            margin-top: 30vh;
+            font-weight: 300;
+            color: burlywood ;
+            line-height: 10vh;
+            padding-top: 5%;
+            margin-left: 33%;">Denizlinin Gelenekleri</h2>
+            <p style=" margin: 5px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2,5vh;
+            font-weight: 300;
+            padding-left: 1%;
+            text-align: center;
+            padding-right: 1%;
+            padding-top: 1% ;
+            color: teal;">  On birinci asırdan sonra Türk olmayanlar İzmir’e doğru göç etmiş ve 1071′den sonra Denizli civârındaki dağ ve yaylalara yerleşen 
+            200.000 çadırlık Türkmenler bölgeye hâkim olmuşlardır. 
+            Osmanlı Devleti Denizli’yi toprağına kattığında Denizli tamâmen Türkleşmiş bulunuyordu. 
+            On birinci asırdan önce bu bölgede yaşayan milletler ve bunların kültürleri eriyip gitmiştir. </p>
+             <div class="kapsayici2">
+                <div class="bolumler" style="width: 45%;
+                height: 90vh;
+                float: left;
+                margin-top: 4%;
+                margin-bottom: 5%;
+                margin-right: 1%;
+                margin-left: 2%;
+                padding-left: 2%;
+                border: 2px solid  #111111 ;
+                box-shadow: 1px 1px 8px #094900;
+                border-radius: 8%;">
+                    <div class="kucukresim" style="float: right;
+                    height: 25vh;
+                    width: 25vh;
+                    padding-right: 25px;
+                    padding-top: 8%;">
+                        <a href="https://tr.wikipedia.org/wiki/Pamukkale"><img style="border: 5px solid #126d00;
+                            border-radius: 100%;
+                            height: 25vh;
+                            width: 25vh;" src="/WebTechnology/City-Web-Site-Project/Pictures/düğün.jpeg" alt="Pamukkale" width="100%" height="100%"></a>
+                    </div>
+                    <div class="yazi">
+                        <h3  style=" padding-top: 7vh; color: burlywood;" >Denizli Düğün Adetleri <br></br>  </h3>
+                        <h5  style="color: teal; ">  Denizlide  evlenmeler genellikle görücü usulü ile yapılmaktadır Esini beğenen erkek sevdiği kızı ailesine bildirmekte, ailenin büyükleri “Allah’ın emri Peygamber’in kavli” ile kızı ailesinden istemektedirler <br></br>      </h5>
+                        <p>  
+                            
+                            Düğünün birinci günü kapma günüdür Bu gün adım gençler için tertip edilen bir kapma yarışından almaktadır Bu gün oğlan evinde davullar çalmakta, konuklar ağırlanmaktadır Türküler söylenir, davulun önünde <i><strong>mahalli oyunlar</strong></i> </p>
+                    </div>
+                    <iframe style="margin-top: 7%; margin-left: 4%; float: center; border-radius: 5%;border-color: yellowgreen;" width="85%" height="45%"  src="https://www.youtube.com/embed/V8CKTs80Ciw" frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="kapsayici2">
+                <div class="bolumler" style="width: 45%;
+                        height: 90vh;
+                        float: right;
+                        margin-top: -50%;
+                        margin-bottom: 1%;
+                        margin-right: 1%;
+                        margin-left: 2%;
+                        padding-left: 2%;
+                        border: 2px solid  #111111 ;
+                        box-shadow: 1px 1px 8px #094900;
+                        border-radius: 8%;">
+                        <div class="kucukresim" style="float: left;
+                            height: 25vh;
+                            width: 25vh;
+                            padding-right: 25px;
+                            padding-top: 8%;">
+                            <a href="https://tr.wikipedia.org/wiki/Pamukkale"><img style="border: 5px solid #126d00;
+                                border-radius: 100%;
+                                height: 25vh;
+                                width: 25vh;" src="/WebTechnology/City-Web-Site-Project/Pictures/Tavas-Efeler-zeybek.jpg" alt="zeybek" width="100%" height="100%"></a>
+                        </div>
+                        <div class="yazi">
+                            <h3  style=" padding-top: 7vh; color: burlywood;" >Tavas Efeler Zeybeği <br></br>  </h3>
+                            <h5  style="color: teal;">  Dağların siper ettiği bir bölgede kurulan Tavas, bu özelliğinden dolayı yüksekleri mekan edinen efelerin de diyarı olmuştur. 'EFE' denildiği zaman akla ilk gelen oyun olan 'zeybek' ise bu ilçe için her zaman farklı bir anlam ifade etmiştir. <br></br>      </h5>
+                            <p>         
+                                Dilden dile, kuşaktan kuşağa geçen bir direniş öyküsüdür Tavas Zeybeği... Adı ile özdeşleşen bu halk oyunu, kökeninde efelerin kahramanlığını anlatır. Haksızlığa karşı çıkan, zenginden topladığını fakire dağıtan, dağları mesken tutan efelerin öyküsüdür Tavas Zeybeğinin anlattığı. <i><strong>. Asil duruş Tavas Zeybeğinin etkileyici hikayesi ile bütünleşince seyrine doyum olmaz bir oyun ortaya çıkar</strong></i> </p>
+                        </div>     
+                        <iframe style="margin-top: 3%; margin-left: 4%; float: center; border-radius: 5%;border-color: yellowgreen;" width="85%" height="45%"  src="https://www.youtube.com/embed/3Ls_0VHkXBg" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section style=" width: 100%;height: 100vh;text-align: center;
+        background: -moz-linear-gradient(#000000,#093001,#000000);
+           background: -webkit-linear-gradient(#000000,#093001,#000000);
+           background: -o-linear-gradient(#000000,#093001,#000000);">
+            <div >
+                <h2 style="  font-size: 250%;
+                font-weight: 300;
+                margin-left: 1%;
+                color: burlywood ;
+                line-height: 70px;"> DENİZLİNİ GAZOZU  <strong>"ZAFER GAZOZ"</strong> </h2>   
+                <div style="width: 75%;
+                height: 75vh;
+                margin: 2% 10%;
+                padding-left: 5%;
+                border: 2px solid  #111111 ;
+                box-shadow: 2px 1px 8px #094900;">
+
+                </div>
+            </div>
+        </section>
+           
+        <section style="
+        background-image:url('/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png'),url('/WebTechnology/City-Web-Site-Project/Pictures/Horozoz.jpg' );
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height:120vh;">
+            <div style=" margin-left: 2%;
+                float: right;
+                width: 35%;
+                position:absolute;
+                top: 45%;
+                text-align: center ;
+                border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
+                box-shadow: 2px 1px 8px #094900;
+                background-color: #093001;
+                opacity: 80%;
+                padding: 10px;">
+                    <h2 style="
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 300%;
+                        margin-top: 2%;
+                        font-weight: 300;
+                        color: burlywood ;
+                        line-height: 70px;
+                        ">Denizli Horozu</h2>   
+                    <h4 style="margin: 5px 0;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 3vh;
+                    font-weight: 300;
+                    padding-left: 1%;
+                    padding-right: 1%;
+                    color: teal;"><br><strong> 1966 Mayıs ayında Denizli ilinde kuruldu </strong><br><br></h4>
+                    
+                    <p>Denizli'nin sembolü olan "Denizli Horozu", renk ve vücut yapısı itibariyle ahenkli uzun ve güzel ötüşleriyle, 
+                        ilimize en uzak yörelere kadar isim yapmış yerli bir ırkımızdır. Bazılarına göre Osmanlı imparatorluğu zamanında 
+                        Arnavutluk'tan İstanbul'a getirilen uzun ötüşlü Berat Horozlarının Denizli'ye getirilmesi ve Denizli'deki yerli 
+                        tavuklarla melezleşmesinden oluştuğu üretildiği söylenmekte ise de bu doğru değildir. Zira renk ve vücut yapısı 
+                        bakımından aralarında hiç bir benzerlik yoktur. 
+                        Denizli Horozu bu bölgedeki insanların eskiden beri uzun ötüşlü horozlara gösterdikleri özen sonucu kendiliğinden oluşmuş bir ırktır..</p>
+            </div>
+            <div style=" margin-left: 65%;
+            width: 30%;
+            position:absolute;
+            float: right;
+            top: 20%;
+            text-align: center  ;
+            border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
+            box-shadow: 2px 1px 8px #094900;
+            background-color: #093001;
+            opacity: 80%;
+            padding: 10px;">
+                <h2 style="
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 300%;
+                margin-top: 2%;
+                font-weight: 300;
+                color: burlywood ;
+                line-height: 70px;
+                margin-left: 5%;">Özellikleri</h2>   
+                <li style="color: teal;"> <strong>Kırmızı veya kırmızı üzerinde beyaz benekli genel renk, siyah kirli beyaz ortaklaşa karışım halindedirler</strong> <br><br></li>
+                <li style="color:rgb(97, 4, 23) ;"><strong>Demirkır, Pamukkır, Kınalı, Al, Siyah ve Kürklü cinsleri vardır </strong></li><br><br></li>
+                <li style="color: teal;"><strong>Ötüşleri, ötüş anındaki vücut pozisyonuna göre Aslan Ötüş, Kurt Ötüşü, Yiğit Ötüşü, Pus Ötüşü olmak üzere 4'e ayrılır.</strong> <br><br></li>
+                <li style="color:rgb(97, 4, 23);"> <strong>Ötüş uzunlukları 30-35 sn.</strong><br><br> </li>
+                <li style="color: teal;"><strong>Cablı ağırlıkları ortalama 3 - 3.5 kg. civarındadır</strong> <br><br></li>
+
+                
+            </div>
+            
+        </section>
+    </body>
                                         
 </html>

@@ -2,7 +2,7 @@
 <html>
 <body>
 <table   class="table table-striped table-dark my-table" align="center">
-<tr>
+        <tr>
             <td >Ad-Soyad :</td>
             <td ><?php echo $_POST['isim']?></td>
         </tr>
@@ -20,7 +20,7 @@
             <td ><?php echo $_POST['Memleket'] ?></td>
         </tr>
         <tr>
-            <td>Hobiler :</td>
+            <td>Konu Turu :</td>
             <td >
 				<?php
 			if(isset($_POST['hobi'])) 

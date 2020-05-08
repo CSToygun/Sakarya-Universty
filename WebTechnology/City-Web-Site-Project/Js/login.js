@@ -6,10 +6,10 @@ function validation() {
       
       if(parola.value == "ibrahimsaid" )
       {
-        alert("Giriş İşleminiz Başarılı. Yönlendiriliyorusnuz ...");
+        alert("Giris Isleminiz Basarılı. Yonlendiriliyorsunuz ...");
         return true;
       }else{
-        alert("Eposta Adresiniz Kayıtlı degil veya Parolanız Hatalı !");
+        alert("E-posta Adresiniz Kayitli degil veya Parolaniz Hatali !");
         return false;
       }
     } else {
