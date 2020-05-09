@@ -3,8 +3,8 @@ body{
     background-image:url("/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png"),url("/WebTechnology/City-Web-Site-Project/Pictures/DenizliHORozu.png");
     position: relative;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
 }
 
 #kayanyazi{
@@ -17,8 +17,8 @@ body{
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
   
 .container { 
-    width: 30%;
-    height: 10%;
+    width: 400px;
+    height: auto    ;
     margin: 1% 5%;
     position: relative;
 }

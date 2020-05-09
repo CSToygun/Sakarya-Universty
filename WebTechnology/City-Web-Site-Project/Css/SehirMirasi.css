@@ -1,4 +1,9 @@
 
+  body{
+    background: -moz-linear-gradient(#000000,#093001,#000000);
+    background: -webkit-linear-gradient(#000000,#093001,#000000);
+    background: -o-linear-gradient(#000000,#093001,#000000);
+  }
   header.up{
     background: -moz-linear-gradient(#000000,#093001,#000000);
     background: -webkit-linear-gradient(#000000,#093001,#000000);
@@ -30,7 +35,7 @@
   height: 85vh;
   border-radius: 6%;
   border: 2px solid  #093001 ;
-      box-shadow: 3px 3px 8px #093001;
+  box-shadow: 3px 3px 8px #093001;
 
 }
 
@@ -128,11 +133,13 @@
 
 }
 .kapsayici{
-  width: 100%;
+  width: auto;
+  height: auto;
   height: 75vh;
 }
 #bolum1 .kapsayici .sol{
-  width:400px;
+  width:auto;
+  text-align: left;
   float: left;
   margin-left: 10%;
 
@@ -155,7 +162,7 @@
 
 }
 #bolum1 .kapsayici .sag{
-  width: 400px;
+  width: auto;
   padding-right: 15%; 
   float: right ; 
 }
@@ -192,7 +199,7 @@
   width:100%;
   height: 120vh;
   border: 2px solid  #093001 ;
-  box-shadow: 3px 3px 8px #093001;
+  box-shadow: 2px 1px 8px #093001;
 
 }
 #bolum2 .mySlides2 #pamukkale{
@@ -205,7 +212,7 @@
   border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
   background-color: #093001;
   border: 2px solid  #000000 ;
-  box-shadow: 3px 3px 8px #093001;
+  box-shadow: 2px 1px 8px #093001;
   opacity: 85%;
   padding: 10px;
 }
@@ -236,11 +243,4 @@
 .kapsayici2{
   width: 90%;
   height: 90vh;
-}
-#bolum3 .kapsayici2 .bolumler .kucukresim img{
-      float: right;
-      height: 25vh;
-      width: 25vh;
-      padding-right: 25px;
-      padding-top: 8%;
 }

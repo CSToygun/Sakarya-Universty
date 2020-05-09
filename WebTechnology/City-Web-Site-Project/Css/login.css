@@ -21,10 +21,10 @@ align-content: center;
 }
 
 .card{
-height: 52vh;
+height: auto;
 margin-top: auto;
 margin-bottom: auto;
-width: 60vh;
+width: auto;
 background-color: rgba(0,0,0,0.5) !important;
 border: 1px solid  #000000 ;
 box-shadow: 4px 6px 8px #093001;
@@ -32,7 +32,7 @@ box-shadow: 4px 6px 8px #093001;
 
 .social_icon span{
 font-size: 60px;
-margin-left: 10px;
+margin-left: 10px;  
 color: rgb(0, 0, 0);
 }
 

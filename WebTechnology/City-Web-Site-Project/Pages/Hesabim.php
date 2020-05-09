@@ -13,6 +13,7 @@
     </head> 
 <body>
         <?php
+        if (isset($_POST['kullanici']) && isset($_POST['parola'])  ) {
             $kullanici = "g191210378@sakarya.edu.tr";
             $parola="ibrahimsaid";
               if( $kullanici == $_POST['kullanici'] && $parola == $_POST['parola']) 
@@ -23,7 +24,9 @@
                 echo "<script language='javascript'> alert('Kullanıcı Bilgilerinizi Yanlış Girdiniz. Tekrar Yönlendiriliyorsunuz...') </script>";
 			    header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");;
 			}
-
+        }else{
+            header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");
+        }
         ?>
         <header class="up">
             <nav id="menu">
