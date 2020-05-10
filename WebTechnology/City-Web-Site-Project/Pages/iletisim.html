@@ -7,32 +7,48 @@
         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
         <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
         <script src="/WebTechnology/City-Web-Site-Project/Js/iletisim.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction()      
+            {
+              var x = document.getElementById("nav");
+              if (x.className === "open") {
+                        x.className += " responsive";
+                } else {
+                        x.className = "open";
+                 }
+            }
+        </script>
     </head> 
 <body>
     <header class="up">
-        <nav id="menu">
-             <ul class="ul">
-                <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
-                    <ul class="ul2">
-                        <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
-                        <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
-                        <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
-                        <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
-                    </ul>
-                </li>
-        
-                <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
-                    <ul class="ul2">
-                        <li class="li2"><a href="#"  class="a">Tarihçesi</a></li>
-                        <li class="li2"><a href="#"  class="a">Kültürel Değerler</a></li>
-                        <li class="li2"><a href="#" class="a" >Gelenekleri</a></li>
-                        <li class="li2"><a href="#"  class="a">Yöresel Kıyafetleri</a></li>
-                    </ul>
-                </li>
-                <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-                <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
-                <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
-            </ul>
+        <nav id="menu" >
+            <div class="open" id="nav" ><p>Menu</p>
+                <ul class="ul">
+                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
+                        <ul class="ul2">
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
+                        </ul>
+                    </li>
+            
+                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
+                        <ul class="ul2">
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum1"  class="a">Tarihçesi</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Kültürel Değerler</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3" class="a" >Gelenekleri</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html"  class="a">Yöresel Kıyafetleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
+                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
+                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
+                </ul>
+                <a href="javascript:void(0);" style="color: tomato;" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
         </nav>
         <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
     <div class="container">

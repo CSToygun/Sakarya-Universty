@@ -2,19 +2,40 @@
 <html>
     <head>
         <head>
-            <title>Ozgecmis </title>
+            <title>Ozgecmis Page</title>
+             <!-- Required meta tags -->
+             <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , maximum-scale=1">  
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
             <!--Custom styles-->
-            <meta charset="utf-8">
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/ozgecmis.css">
          <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction()      
+            {
+              var x = document.getElementById("nav");
+              if (x.className === "open") {
+                        x.className += " responsive";
+                } else {
+                        x.className = "open";
+                 }
+            }
+        </script>
     </head> 
 <body>
     
 <body>
         <header class="up">
-            <nav id="menu">
-                 <ul class="ul">
+          <nav id="menu" >
+            <div class="open" id="nav" ><p>Menu</p>
+                <ul class="ul">
                     <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
                         <ul class="ul2">
                             <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
@@ -26,14 +47,14 @@
             
                     <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
                         <ul class="ul2">
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Tarihçesi</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3"  class="a">Kültürel Değerler</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html" class="a" >Gelenekleri</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum1"  class="a">Tarihçesi</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Kültürel Değerler</a></li>
+                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3" class="a" >Gelenekleri</a></li>
                             <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html"  class="a">Yöresel Kıyafetleri</a></li>
                         </ul>
                     </li>
                     <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Hesabım.php">Hesabım</a></li>
+                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Hesabim.php">Hesabım</a></li>
                     <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Ozgecmis.html">Ozgecmis</a>
                         <ul class="ul2">
                             <li class="li2"><a href="#"  class="a">Egitim Hayatı</a></li>
@@ -47,11 +68,16 @@
                             <li class="li2"><a href="#"  class="a">Resimleri</a></li>
                         </ul>
                     </li>
-            </nav>
+                </ul>
+                <a href="javascript:void(0);" style="color: tomato;" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+          </nav>
+        </header>
 <!----------------------------------------------------------------CV-Bolumu -------------------------------->
             <div class="egitim" >
                 <div class="row" >
-                  <div class="col-2" >
+                  <div class=" col-2 col-md-2 col-10" >
                         <img src="/WebTechnology/City-Web-Site-Project/Pictures/Ben.JPG" style=" width: 80%; border-radius: 10%; margin: 10%;" alt="resim">
                         <hr color="white">  
                         <hr color="white">
@@ -77,12 +103,8 @@
                           <tr>
                             <td>
                               <h4 style="color:crimson;"><img src="/WebTechnology/City-Web-Site-Project/Pictures/soru.png" style="width: 5vh" > Ben Kimim ? </h4>
-                              <p>
-                                Alihan Saraç meraklı , kodlamayı ,robotiği ve bilgisiyarları aşkla seven bir mühendis adayıdır.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at eleifend urna. Ut nec facilisis
-                                 purus, sed euismod ipsum. Nunc et efficitur mi. Nullam ut dapibus turpis. Cras sapien ligula, 
-                                 pellentesque a mauris a, placerat lobortis mauris. Vestibulum eget sapien leo. Curabitur molestie 
-                                 ipsum in porttitor lacinia. 
+                              <p style="color: teal;">
+                                  Ben İbrahim Said Kavas.  27 Mart 1999 Kahramanmaraşda doğdum. Aslen Denzililiyim. Hızlı öğrenim becerise sahip , kendini geliştirmeye daima açık bir gencim 
                               </p>
                             </td>   
                           </tr>                 
@@ -107,13 +129,13 @@
                                 <tbody>
                                   <tr>
                                     <td style="color:teal">Yeşilköy İ.O </td>
-                                    <td >-</td>
+                                    <td ">-</td>
                                     <td style="color:teal;">2005</td>
                                     <td style="color: rgb(14, 187, 129);">2010</td>
                                   </tr>
                                   <tr>
                                     <td style="color: teal">Osman Özgür O.O.</td>
-                                    <td > -</td>
+                                    <td "> -</td>
                                     <td style="color: teal">2010</td>
                                     <td style="color: rgb(14, 187, 129);">2013</td>
                                   </tr>

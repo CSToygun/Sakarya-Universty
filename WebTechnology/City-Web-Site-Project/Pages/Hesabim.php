@@ -2,7 +2,7 @@
 <html>
     <head>
         <head>
-            <title>Ozgecmis Page</title>
+            <title>Hesabim</title>
              <!-- Required meta tags -->
              <meta charset="utf-8">
              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , maximum-scale=1">  
@@ -10,6 +10,41 @@
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/index.css">
          <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+         <style>
+                .up{
+                background-image:url("/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png"),url("/WebTechnology/City-Web-Site-Project/Pictures/Denizlinin-gece-manzaras-334.jpg");
+                position: relative;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+            }
+            .up #banner{
+                margin-left: 37%;
+                width: 20%;
+                position:absolute;
+                top: 20%;
+                text-align: center  ;
+                border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
+                background-color: #093001;
+                opacity: 80%;
+                padding: 10px;
+            }
+            .up #banner #h2{
+                color: burlywood;
+                font-style: italic;
+                font-weight: 200;
+
+            }
+            .up #banner #h4{
+                color: burlywood;
+                font-style: oblique;
+                letter-spacing: 2px;
+            }
+            .up #banner #h5{
+                color: teal;
+                font-style: italic;
+            }
+         </style>
     </head> 
 <body>
         <?php
@@ -65,17 +100,21 @@
                     </li>
             </nav>
             <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
+            <div id="banner">
+                <h2 id="h2"> Hoşgeldiniz <br></h2>    
+                <img src="/WebTechnology/City-Web-Site-Project/Pictures/Ben.JPG" width="70%" height="70%" border="1"/>
+                <h4 id="h4"><br>İbrahim Said Kavas <br><br></h4>
+                <h5 id="h5">Sakarya Üniversitesi Bilgisayar Mühendisliği 1.Sınıf Öğrencisi<br><br></h5>
+                <a href="https://www.github.com/CSToygun" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/github-logo.png " width="14%" height="14%" align="left" ></a>
+                <a href="https://www.github.com/CSToygun" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/Twitter.png " width="14%" height="14%" align="left" ></a>
+                <a href="https://www.github.com/CSToygun" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/Linkedin.png " width="14%" height="14%""  align="left" ></a>
+                <a href="https://www.instagram.com/ibrahimsaidkavas_20" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/instagram.png " width="14%" height="14%"  align="center" ></a>
+                <a href="https://www.youtube.com/channel/UCHxw8GMMg62MXepyA-0wtDw" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/Youtube.png " width="14%" height="14%"  align="right" ></a>
+                <a href="https://www.facebook.com" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/Facebook.png " width="14%" height="14%"  align="right" ></a>
+                <a href="mailto:ibrahimsaidkavas@gmail.com"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Gmail.png " width="14%" height="14%"   align="right" ></a> 
+            </div>
         </header>
         
-
-    <div id="particle-canvas">
-        <script src="/WebTechnology/City-Web-Site-Project/Js/particle.js"></script>
-        <div class="container">
-            <span class="text1"> DENİZLİ </span>
-            <iframe width="0" height="0" src=" https://www.youtube.com/embed/WzgfnbouSrI?autoplay=1"> </iframe>
-            <span class="text2  "> Hayatımız <i id="yesil">Yeşil</i> - <i id="siyah">Siyah</i>  </span>
-        </div> 
-    </div>
 </body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

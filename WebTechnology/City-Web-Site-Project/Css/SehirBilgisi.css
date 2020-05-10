@@ -151,7 +151,7 @@
     }
     #bolum4{
       width: 100%;
-      height: 185vh;
+      height: 150vh;
       padding-top: 5%;
       background-size: cover;
       background: -moz-linear-gradient(#000000,#093001,#000000);
@@ -186,9 +186,9 @@
       height: auto;
       float: left;
       margin-top: 4%;
-      margin-bottom: 25px;
-      margin-right: 5px;
-      margin-left: 5px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      margin-left: 15px;
       padding-left: 1%;
       border: 2px solid  #111111 ;
       box-shadow: 1px 1px 8px #111111;
@@ -238,8 +238,8 @@
       height: 110vh;
     }
     #bolum5 #banner2{
-      margin-left: 28%;
-      width: 40%;
+      margin-left: 23vw;
+      width: auto;
       position:absolute;
       top: 20%;
       text-align: center  ;
@@ -272,3 +272,5 @@
       height: 600px;
       width: 200px;
   }
+
+    

@@ -1,41 +1,38 @@
-var slideIndex = 1;
-gosterSlides(slideIndex);
+var slideIndex2 = 1;
+gosterSlides2(slideIndex2);
 
-// Next/previous controls
 function degistirSlides(n) {
   gosterSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   gosterSlides(slideIndex = n);
 }
 
-function gosterSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function gosterSlides(n) 
+{
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
 }
 /*-------------------------------------2.Slider ----------------------------------------------------------------*/
 var slideIndex2 = 1;
 gosterSlides2(slideIndex2);
 
-// Next/previous controls
 function degistirSlides2(n) {
   gosterSlides2(slideIndex2 += n);
 }
 
-// Thumbnail image controls
 function currentSlide2(n) {
   gosterSlides2(slideIndex2 = n);
 }
@@ -53,5 +50,5 @@ function gosterSlides2(n) {
       dots2[j].className = dots2[j].className.replace(" active", "");
   }
   slides2[slideIndex2-1].style.display = "block";
-  dots2[slideIndex2-1].className += " active";
+  dots2[slideIndex2-1].className += "active";
 }

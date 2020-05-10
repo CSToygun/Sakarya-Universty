@@ -12,32 +12,48 @@
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/bootstrap/css/bootstrap.css">
 
          <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction()      
+            {
+              var x = document.getElementById("nav");
+              if (x.className === "open") {
+                        x.className += " responsive";
+                } else {
+                        x.className = "open";
+                 }
+            }
+        </script>
     </head> 
     <body>
         <header>
             <nav id="menu" >
-                 <ul class="ul">
-                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
-                        <ul class="ul2">
-                            <li class="li2" ><a href="#bolum2"  class="a">Nüfus</a></li>
-                            <li class="li2" ><a href="#bolum3"  class="a">Coğrafi Özellikleri</a></li>
-                            <li class="li2" ><a href="#bolum4" class="a" >İlçeleri</a></li>
-                            <li class="li2" ><a href="#bolum5"  class="a">Spor Klüpleri</a></li>
-                        </ul>
-                    </li>
-            
-                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="#"  class="a">Tarihçesi</a></li>
-                            <li class="li2"><a href="#"  class="a">Kültürel Değerler</a></li>
-                            <li class="li2"><a href="#" class="a" >Gelenekleri</a></li>
-                            <li class="li2"><a href="#"  class="a">Yöresel Kıyafetleri</a></li>
-                        </ul>
-                    </li>
-                    <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
-                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
-                </ul>
+                <div class="open" id="nav" ><p>Menu</p>
+                    <ul class="ul">
+                        <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum1"  class="a">Tarihçesi</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Kültürel Değerler</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3" class="a" >Gelenekleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html"  class="a">Yöresel Kıyafetleri</a></li>
+                            </ul>
+                        </li>
+                        <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
+                        <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
+                        <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" style="color: tomato;" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                </div>
             </nav>
             <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
         </header>
@@ -125,22 +141,22 @@ Yüzölçümü 11.861 km2 olan Denizli ilinde kilometrekareye 87 insan düşmekt
                 </div>
             </div>
             <div class="kapsayici2 ">
-                <div class="row-cols-sm-1 row-cols-md-2 align-content-center">
-                    <div class="bolumler col-auto align-content-center">
+                <div class="row-cols-sm-1 row-cols-md-2 ">
+                    <div class="bolumler col align-content-center">
                         <div class="kucukresim">
                             <a href="https://tr.wikipedia.org/wiki/Pamukkale"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Pamukkale.jpg" alt="Pamukkale" width="100%" height="100%"></a>
                         </div>
                         <div class="yazi">
                             <h3 > Pamukkale<br></br>  </h3>
                             <h5 >  Pamukkale, eski adıyla Akköy, Denizli'nin en büyük nüfuslu ilçesi. <br></br> </h5>
-                            <p style="text-align: center; color: crimson;">  
+                            <p style="text-align: left; color: crimson;">  
                                 
                                 12 Kasım 2012'de TBMM'de kabul edilen 6360 sayılı kanun ile adı değiştirilmiştir. 
                                 
-                                68 mahalleden oluşmaktadır. 1988'den beri UNESCO Dünya Mirası sayılan <i><strong>(Hierapolis) travertenleri</strong></i>  bu ilçededir.   </p>
+                                68 mahalleden oluşmaktadır.<br> 1988'den beri UNESCO Dünya Mirası sayılan <i><strong>(Hierapolis) travertenleri</strong></i>  bu ilçededir.   </p>
                         </div>
                     </div>
-                    <div class="bolumler col-auto align-content-center">
+                    <div class="bolumler col-md-5  ">
                         <div class="kucukresim">
 
                             <a href="https://tr.wikipedia.org/wiki/Tavas"><img src="/WebTechnology/City-Web-Site-Project/Pictures//Tavas.JPG" alt="Tavas"  width="90%" height="90%"></a>
@@ -148,30 +164,30 @@ Yüzölçümü 11.861 km2 olan Denizli ilinde kilometrekareye 87 insan düşmekt
                         <div class="yazi">
                             <h3 > Tavas </h3>
                             <h5 > Tavas, Denizli ilinin bir ilçesidir. Tavas ilçesi adını 40 km yakınında bulunan Kale ilçesinin eski adı olarak bilinen Davaz adından alımıştır. <br></br>      </h5>
-                            <p style="text-align: center; color: crimson;">  <br> İlçede <i> Tavas Zeybeği</i> çok popülerdir. Denizli yöresine ait bir zeybek oyunudur. Yörede <strong>"gırık davaz"</strong> şeklinde bilinen bir türevi de mevcuttur.. </i>   </p>
+                            <p style="text-align: left; color: crimson;">  <br> İlçede <i> Tavas Zeybeği</i> çok popülerdir. Denizli yöresine ait bir zeybek oyunudur. Yörede <strong>"gırık davaz"</strong> şeklinde bilinen bir türevi de mevcuttur.. </i>   </p>
                         </div>
                     </div>
 
                 </div>
                 <div class="row-cols-sm-1 row-cols-md-2 align-content-center">
-                    <div class="bolumler col align-content-center">
+                    <div class="bolumler col-md-6 ">
                         <div class="kucukresim">
                             <a href="https://tr.wikipedia.org/wiki/%C3%87ameli"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Çameli.jpg" alt="Cameli"  width="90%" height="90%"></a>
                         </div>
                         <div class="yazi">
                             <h3 > Cameli </h3>
                             <h5 >  Pamukkale, eski adıyla Akköy, Denizli'nin en büyük nüfuslu ilçesi. <br></br> </h5>
-                            <p style="text-align: center; color: crimson;">  Toros dağlarının batı kısmında yer alan ilçenin en yüksek tepesi 2303 metre ile Akdağ'dır. İlçemiz kültürel yapı olarak çok çeşitli değerlere sahiptir. Kültürel değerler kapsamında yöresel oyunlar, düğünler, yöresel kıyafetler ve el sanatları mevcuttur.</p>
+                            <p style="text-align:left; color: crimson;">  Toros dağlarının batı kısmında yer alan ilçenin en yüksek tepesi 2303 metre ile Akdağ'dır. İlçemiz kültürel yapı olarak çok çeşitli değerlere sahiptir. Kültürel değerler kapsamında yöresel oyunlar, düğünler, yöresel kıyafetler ve el sanatları mevcuttur.</p>
                         </div>
                     </div>
-                    <div class="bolumler col align-content-center">
+                    <div class="bolumler col-md-5  align-content-center">
                         <div class="kucukresim">
                             <a href="https://tr.wikipedia.org/wiki/Babada%C4%9F,_Denizli"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Babadag.jpg" alt="Babadag"  width="90%" height="90%"></a>
                         </div>
                         <div class="yazi">
                             <h3 > Babadag </h3>
                             <h5 >  Babadağ, Denizli ilinin bir ilçesidir. İlçe Türkiye'nin tekstille geçimini sağlayan ilçelerinden biridir. Ziraat alanları az olduğundan halk tekstil üretimine yönelmiştir.<i>Et kapaması, et çevirmesi ve keşkek yöre yemeklerindendir. </i>  <br></br>      </h5>
-                            <p style="text-align: center; color: crimson;"> Babadağ´a bağlı toplam 9 köy vardır. Nüfusu 6.800dür  </p>
+                            <p style="text-align: left; color: crimson;"> Babadağ´a bağlı toplam 9 köy vardır. Nüfusu 6.800dür  </p>
                         </div>
                     </div>
 
@@ -181,20 +197,21 @@ Yüzölçümü 11.861 km2 olan Denizli ilinde kilometrekareye 87 insan düşmekt
                 
         </section>
                                 <!--------------------------5.Bolum ----------------------------------> 
-        <section id="bolum5">
-            <div id="banner2">
-                    <h2>DenizliSpor Klübü</h2>   
-                    <h3><img src="/WebTechnology/City-Web-Site-Project/Denizli.png" width="30%" height="30%" border="2"/></h3>
-                    <h4><br><strong> 1966 Mayıs ayında Denizli ilinde kuruldu </strong><br><br></h4>
-                    
-            <p><strong> 2019 Yılında sponsorluk anlaşması gereğince Yukatel Denizlispor adı verildi, 1966 yılı Mayıs ayında Denizli ilinde kurulmuş olan, özellikle Profesyonel Futbol Takımı ile tanınan spor kulübüdür. 
-                Renkleri <i>yeşil-siyah</i> olan kulübün futbol takımı, maçlarını 18.745 kişilik Denizli Atatürk Stadyumu'nda oynamaktadır</strong>,.</p>
+        <section id="bolum5" class="container-fluid">
+            <div class="row">
+                <div id="banner2" class=" col-sm-2 col-md-6">
+                        <h2>DenizliSpor Klübü</h2>   
+                        <h3><img src="/WebTechnology/City-Web-Site-Project/Denizli.png" width="30%" height="30%" border="2"/></h3>
+                        <h4><br><strong> 1966 Mayıs ayında Denizli ilinde kuruldu </strong><br><br></h4>    
+                <p style="color: crimson;"><strong> 2019 Yılında sponsorluk anlaşması gereğince Yukatel Denizlispor adı verildi, 1966 yılı Mayıs ayında Denizli ilinde kurulmuş olan, özellikle Profesyonel Futbol Takımı ile tanınan spor kulübüdür. 
+                    Renkleri <i>yeşil-siyah</i> olan kulübün futbol takımı, maçlarını 18.745 kişilik Denizli Atatürk Stadyumu'nda oynamaktadır</strong>,.</p>
+                </div>
             </div>
+            
         </section> 
     </body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

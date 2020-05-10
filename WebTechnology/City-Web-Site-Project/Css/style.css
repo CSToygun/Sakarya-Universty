@@ -20,7 +20,22 @@
         opacity: 85%;
         z-index: 2;
       }
-
+#kayanyazi{
+  padding-top: 6%;
+  background: none;
+  color:rgb(7, 88, 0);
+  font-size: 15px;
+  z-index: 2;
+}
+@media (min-width:768px) {
+  .open a.icon {
+    display: none;
+    display: none;
+  }
+  #menu .open p{
+    position: fixed;
+    display: none;
+  }
   #menu .ul {
     list-style: none;
     padding: 0px;
@@ -34,6 +49,7 @@
     display: block;
     color: white;
     text-align: center;
+    margin-top: -11px;
     padding:10px;
     border-radius: 14px ;
     text-decoration: none;
@@ -105,9 +121,75 @@
 #menu .ul  .Ozgecmis{
   float: right;
 }
-#kayanyazi{
-  padding-top: 4%;
-  background: none;
-  color:rgb(7, 88, 0);
-  font-size: 15px;
+
+}
+@media (max-width:600px) {
+  #menu .open{display:block;}
+  #menu ul{display: none;}
+  #menu {
+    padding-left: 10px;
+    padding-top: 0px;
+    list-style-type: none;
+    margin-top: 0.1%;
+    margin-left: 12px;
+    overflow: hidden; 
+    border-radius: 14px ;
+    background: -moz-linear-gradient(#111111,#093001,#111111);
+    background: -webkit-linear-gradient(#111111,#093001,#111111);
+    background: -o-linear-gradient(#111111,#093001,#111111);
+    position: fixed;
+    width: 97%;
+    top: 10px;
+    opacity: 85%;
+    z-index: 2;
+  }
+  #menu  div{
+    display: block;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    padding:10px;
+    float: right;
+    border-radius: 14px ;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    width: 30vw ;
+  }
+  .open.responsive {position: relative;}
+  .open.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #menu .responsive ul {
+    float: right;
+    display: block;
+    text-align: left;
+  }
+  #menu .responsive .ul .shr .a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:10px;
+    border-radius: 14px ;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    width: 101px;
+  }
+  #menu .responsive .ul .shr {
+    list-style-type: none;  
+    float: left;
+  }
+  #menu .responsive .ul .shr .ul2 {
+    display: none;
+  }
+  #menu  .responsive .ul .shr .a:hover {
+    border-radius: 25px ;
+    background-color: rgb(0, 0, 0);
+    color: #178101;
+    transition-duration: 0.7s;
+  
+}
 }

@@ -17,7 +17,6 @@
         width: 200px;
     }
 
-/* Slideshow container */
 .slideshow-container {
 
   width: 85%;
@@ -40,12 +39,10 @@
 }
 
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -61,18 +58,15 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
   background: -moz-linear-gradient(#111111,#093001,#111111);
     background: -webkit-linear-gradient(#111111,#093001,#111111);

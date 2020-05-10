@@ -10,40 +10,53 @@
          <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
          <script src="/WebTechnology/City-Web-Site-Project/Js/SehirMirası.js" type="text/javascript"></script>
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/bootstrap/css/bootstrap.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction()      
+            {
+              var x = document.getElementById("nav");
+              if (x.className === "open") {
+                        x.className += " responsive";
+                } else {
+                        x.className = "open";
+                 }
+            }
+        </script>
     </head> 
 
-    <body onload="currentSlide(1);currentSlide2(1)" >
+    <body onload="currentSlide(1);currentSlide2(1);" >
         <header class="up">
-            <nav id="menu">
-                 <ul class="ul">
-                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
-                        </ul>
-                    </li>
-            
-                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="#bolum2"  class="a">Tarihçesi</a></li>
-                            <li class="li2"><a href="#bolum3"  class="a">Kültürel Değerler</a></li>
-                            <li class="li2"><a href="#" class="a" >Gelenekleri</a></li>
-                            <li class="li2"><a href="#"  class="a">Yöresel Kıyafetleri</a></li>
-                        </ul>
-                    </li>
-                    <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
-                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
-                </ul>
+            <nav id="menu" >
+                <div class="open" id="nav" ><p>Menu</p>
+                    <ul class="ul">
+                        <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum1"  class="a">Tarihçesi</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Kültürel Değerler</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3" class="a" >Gelenekleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html"  class="a">Yöresel Kıyafetleri</a></li>
+                            </ul>
+                        </li>
+                        <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
+                        <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Login/login.html">Login</a></li>
+                        <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/iletisim.html">Iletisim</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" style="color: tomato;" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                </div>
             </nav>
             <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
 
-                <!-- Slideshow container -->
             <div class="slideshow-container">
-
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <a href="#bolum2"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Pamukkale2.png"  ></a>
                     <div class="text"> Pamukkale </div>
@@ -72,7 +85,7 @@
                 <a class="next" onclick="degistirSlides(1)">&#10095;</a>
             </div>
             <br>
-            <div style="text-align:center; position: relative; top: 93%;" t>
+            <div style="text-align:center; position: relative; top: 93%;">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
@@ -107,7 +120,7 @@
 
             </div>
         </section>
-        <section id="bolum2" onload="currentSlide2(1)">
+        <section id="bolum2">
             <div class="mySlides2 fade">
                 <a href="https://en.wikipedia.org/wiki/Pamukkale"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Pamukale2.jpg" ></a>
                 <div id="pamukkale">
@@ -115,27 +128,27 @@
     
                     <h4><br><strong> Kent Kaplıcaları ve akan sulardan kalan karbonat mineralleri sayesinde bembeyaz bir cennet haline gelmiştir</strong><br><br></h4>
                        
-                    <p>Eski Hierapolis kenti bem beyaz "kalenin" üzerine inşa edilmişti. Denizli'nin 20 km uzaktaki merkezindeki vadinin karşı tarafındaki tepelere kurulmuştur. Hemen arkasında Laodikya antik kenti bulunur. 5 km ilerisinde ise uluslararası bir termal merkez olan Karahayıt köyü vardır. Pamukkale <i>UNESCO </i>tarafından belirlenen Dünya Miras Listesi'nde yer almaktadır. Travertenler görsel zenginliğin yanı sıra <strong id="Str1"> kalp rahatsızlıkları, romatizma, sindirim, solunum, dolaşım ve deri rahatsızlıklarına </strong> iyi gelmektedi</p>
+                    <p style="color: crimson;">Eski Hierapolis kenti bem beyaz "kalenin" üzerine inşa edilmişti. Denizli'nin 20 km uzaktaki merkezindeki vadinin karşı tarafındaki tepelere kurulmuştur. Hemen arkasında Laodikya antik kenti bulunur. 5 km ilerisinde ise uluslararası bir termal merkez olan Karahayıt köyü vardır. Pamukkale <i>UNESCO </i>tarafından belirlenen Dünya Miras Listesi'nde yer almaktadır. Travertenler görsel zenginliğin yanı sıra <strong id="Str1"> kalp rahatsızlıkları, romatizma, sindirim, solunum, dolaşım ve deri rahatsızlıklarına </strong> iyi gelmektedi</p>
                 </div>
             </div>
             <div class="mySlides2 fade">
-                <a href="https://en.wikipedia.org/wiki/Hierapolis"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Leodikya.jpg" ></a>
+                <a href="http://www.denizli.gov.tr/laodikya"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Leodikya.jpg" ></a>
                 <div id="pamukkale">
                     <h2> Tarihi Şehir  <strong>"Leodikya"</strong> </h2>   
     
-                    <h4><br><strong> Kent Kaplıcaları ve akan sulardan kalan karbonat mineralleri sayesinde bembeyaz bir cennet haline gelmiştir</strong><br><br></h4>
+                    <h4><br><strong>Denizli ilinin 6 km. kuzeyinde yer alan antik Laodikeia kenti, coğrafi bakımdan çok uygun bir noktada ve Lykos ırmağının güneyinde kurulmuştur. Kentin adı antik kaynaklarda daha çok “Lykos'un kıyısındaki Laodikeia” şeklinde geçmektedir.</strong><br><br></h4>
                        
-                    <p>Eski Hierapolis kenti bem beyaz "kalenin" üzerine inşa edilmişti. Denizli'nin 20 km uzaktaki merkezindeki vadinin karşı tarafındaki tepelere kurulmuştur. Hemen arkasında Laodikya antik kenti bulunur. 5 km ilerisinde ise uluslararası bir termal merkez olan Karahayıt köyü vardır. Pamukkale <i>UNESCO </i>tarafından belirlenen Dünya Miras Listesi'nde yer almaktadır. Travertenler görsel zenginliğin yanı sıra <strong id="Str1"> kalp rahatsızlıkları, romatizma, sindirim, solunum, dolaşım ve deri rahatsızlıklarına </strong> iyi gelmektedi</p>
+                    <p style="color: crimson;"> İmparator Caracalla zamanında Laodikeia'da bir seri kaliteli sikke basılmıştır. Laodikeia halkının da katkılarıyla kentte çok sayıda anıtsal yapı yapılmıştır. Küçük Asia'nın 7 ünlü kilisesinden birinin bu kentte bulunması, Hıristiyanlığın burada ne kadar önemli olduğunu göstermektedir. MS. 60 yılında meydana gelen çok büyük bir deprem kenti yerle bir etmiştir.  </p>
                 </div>
             </div>
             <div class="mySlides2 fade">
-                <a href="https://en.wikipedia.org/wiki/Hierapolis"><img src="/WebTechnology/City-Web-Site-Project/Pictures/BuldanEvleri.jpg"></a>
+                <a href="https://en.wikipedia.org/wiki/Pamukkale"><img src="/WebTechnology/City-Web-Site-Project/Pictures/BuldanEvleri.jpg"></a>
                 <div id="pamukkale">
                     <h2> Rengarenk İlçe  <strong>"Babadağ"</strong> </h2>   
     
                     <h4><br><strong> Denizli'nin "tekstilin vatanı" olarak bilinen Babadağ ilçesinde belediye, iş adamları derneği ve üniversite iş birliğiyle yürütülen proje kapsamında, ilçedeki 100 tarihi ev aslına uygun restore edilerek dış cepheleri rengarenk boyandı.</strong><br><br></h4>
                        
-                    <p>Coğrafyaya uyumlu inşa edilen ve zamana adeta meydan okuyan evlerin renklendirilmesiyle dikkat çekmeye başladığını ifade eden Belediye Başkanı Akakça, "Her ev fonksiyonel olarak kullanılıyor hem tezgah hem yaşam alanı ve hem de kültürün kucak kucağa olduğu evler. Son zamandaki boyama işi ise fotografik açıdan yöreye insanların gelmesi ve göz zevki açısından ayrı bir güzellik kattı." ifadelerini kullandı. </strong> iyi gelmektedi</p>
+                    <p style="color: crimson;">Coğrafyaya uyumlu inşa edilen ve zamana adeta meydan okuyan evlerin renklendirilmesiyle dikkat çekmeye başladığını ifade eden Belediye Başkanı Akakça, "Her ev fonksiyonel olarak kullanılıyor hem tezgah hem yaşam alanı ve hem de kültürün kucak kucağa olduğu evler. Son zamandaki boyama işi ise fotografik açıdan yöreye insanların gelmesi ve göz zevki açısından ayrı bir güzellik kattı." ifadelerini kullandı. </strong> iyi gelmektedi</p>
                 </div>
             </div>
                     <a class="prev" onclick="degistirSlides2(-1)">&#10094;</a>
