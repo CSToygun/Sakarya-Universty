@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('/WebTechnology/City-Web-Site-Project/Pictures/DenizliSnowly.jpg');
+background-image: url('/WebTechnology/City-Web-Site-Project/Pictures/SAÜ-Esentepe-Kampüsü.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -12,7 +12,6 @@ font-family: 'Numans', sans-serif;
 
 .container{
 height: 100vh;
-padding-top: 5%;
 align-content: center;
 }
 .container .d-flex .card .card-header h3{

@@ -1,5 +1,5 @@
-var slideIndex2 = 1;
-gosterSlides2(slideIndex2);
+var slideIndex = 1;
+gosterSlides2(slideIndex);
 
 function degistirSlides(n) {
   gosterSlides(slideIndex += n);
