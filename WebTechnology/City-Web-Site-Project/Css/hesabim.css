@@ -1,0 +1,33 @@
+.up{
+    background-image:url("/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png"),url("/WebTechnology/City-Web-Site-Project/Pictures/Denizlinin-gece-manzaras-334.jpg");
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.up #banner{
+    margin-left: 37%;
+    width: 20%;
+    position:absolute;
+    top: 20%;
+    text-align: center  ;
+    border: 5px solid rgb(0, 0, 0); /* Kenar kalınlığı, şekli ve rengi */
+    background-color: #093001;
+    opacity: 80%;
+    padding: 10px;
+}
+.up #banner #h2{
+    color: burlywood;
+    font-style: italic;
+    font-weight: 200;
+
+}
+.up #banner #h4{
+    color: burlywood;
+    font-style: oblique;
+    letter-spacing: 2px;
+}
+.up #banner #h5{
+    color: teal;
+    font-style: italic;
+}

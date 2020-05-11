@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<?php
+        if (isset($_POST['kullanici']) && isset($_POST['parola'])  ) {
+            $kullanici = "g191210378@sakarya.edu.tr";
+            $parola="ibrahimsaid";
+              if( $kullanici == $_POST['kullanici'] && $parola == $_POST['parola']) 
+			{
+                echo "<script language='javascript'> alert('Sayın : $kullanici --- Hoşgeldiniz...') </script>";            
+            }
+            else {
+                echo "<script language='javascript'> alert('Kullanıcı Bilgilerinizi Yanlış Girdiniz. Tekrar Yönlendiriliyorsunuz...') </script>";
+			    header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");;
+			}
+        }else{
+            header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");
+        }
+        ?>
 <html>
     <head>
         <head>
@@ -8,10 +24,10 @@
              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , maximum-scale=1">  
             <!--Custom styles-->
          <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/style.css">
-         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/index.css">
          <link rel="shortcut icon" type="image/png" href="/WebTechnology/City-Web-Site-Project/Denizli.png">
+         <link rel="stylesheet" type="text/css" href="/WebTechnology/City-Web-Site-Project/Css/hesabim.css">
          <style>
-                .up{
+                        .up{
                 background-image:url("/WebTechnology/City-Web-Site-Project/Pictures/Dbl-Cluster-in-Perseus.png"),url("/WebTechnology/City-Web-Site-Project/Pictures/Denizlinin-gece-manzaras-334.jpg");
                 position: relative;
                 background-size: cover;
@@ -45,60 +61,61 @@
                 font-style: italic;
             }
          </style>
+         <script>
+            function myFunction()      
+            {
+              var x = document.getElementById("nav");
+              if (x.className === "open") {
+                        x.className += " responsive";
+                } else {
+                        x.className = "open";
+                 }
+            }
+        </script>
+
     </head> 
 <body>
-        <?php
-        if (isset($_POST['kullanici']) && isset($_POST['parola'])  ) {
-            $kullanici = "g191210378@sakarya.edu.tr";
-            $parola="ibrahimsaid";
-              if( $kullanici == $_POST['kullanici'] && $parola == $_POST['parola']) 
-			{
-                echo "<script language='javascript'> alert('Sayın : $kullanici --- Hoşgeldiniz...') </script>";            
-            }
-            else {
-                echo "<script language='javascript'> alert('Kullanıcı Bilgilerinizi Yanlış Girdiniz. Tekrar Yönlendiriliyorsunuz...') </script>";
-			    header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");;
-			}
-        }else{
-            header ("Location:/WebTechnology/City-Web-Site-Project/Login/login.html");
-        }
-        ?>
-        <header class="up">
-            <nav id="menu">
-                 <ul class="ul">
-                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
-                        </ul>
-                    </li>
-            
-                    <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Tarihçesi</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3"  class="a">Kültürel Değerler</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html" class="a" >Gelenekleri</a></li>
-                            <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html"  class="a">Yöresel Kıyafetleri</a></li>
-                        </ul>
-                    </li>
-                    <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
-                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Hesabim.php">Hesabım</a></li>
-                    <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Ozgecmis.html">Ozgecmis</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="#"  class="a">Egitim Hayatı</a></li>
-                            <li class="li2"><a href="#"  class="a">Hayalleri</a></li>
-                        </ul>
-                    </li>
-                    <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/hakkımda.html">Hakkımda</a>
-                        <ul class="ul2">
-                            <li class="li2"><a href="#"  class="a">Çocuklugu</a></li>
-                            <li class="li2"><a href="#"  class="a">Hobileri</a></li>
-                            <li class="li2"><a href="#"  class="a">Resimleri</a></li>
-                        </ul>
-                    </li>
-            </nav>
+    <header class="up">
+        <nav id="menu" >
+                <div class="open" id="nav" ><p>Menu</p>
+                    <ul class="ul">
+                        <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html">Sehir Bilgisi</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum2"  class="a">Nüfus</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum3"  class="a">Coğrafi Özellikleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.html#bolum4" class="a" >İlçeleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Bilgisi.htmlbolum5"  class="a">Spor Klüpleri</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="shr"><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html">Sehir Mirası</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum1"  class="a">Tarihçesi</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum2"  class="a">Kültürel Değerler</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html#bolum3" class="a" >Gelenekleri</a></li>
+                                <li class="li2"><a href="/WebTechnology/City-Web-Site-Project/Pages/Sehir-Mirası.html"  class="a">Yöresel Kıyafetleri</a></li>
+                            </ul>
+                        </li>
+                        <li class="denizli shr "><a  class="a" href="/WebTechnology/City-Web-Site-Project/index.html">DENİZLİ</a></li>
+                        <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Hesabim.php">Hesabım</a></li>
+                        <li class="iletisim shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/Ozgecmis.html">Ozgecmis</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="#"  class="a">Egitim Hayatı</a></li>
+                                <li class="li2"><a href="#"  class="a">Hayalleri</a></li>
+                            </ul>
+                        </li>
+                        <li class="login shr "><a class="a" href="/WebTechnology/City-Web-Site-Project/Pages/hakkımda.html">Hakkımda</a>
+                            <ul class="ul2">
+                                <li class="li2"><a href="#"  class="a">Çocuklugu</a></li>
+                                <li class="li2"><a href="#"  class="a">Hobileri</a></li>
+                                <li class="li2"><a href="#"  class="a">Resimleri</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" style="color: tomato;" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                </div>
+              </nav>
             <marquee scrolldelay="70" id="kayanyazi">Denizliyi Seviyorum</marquee>
             <div id="banner">
                 <h2 id="h2"> Hoşgeldiniz <br></h2>    
@@ -113,7 +130,7 @@
                 <a href="https://www.facebook.com" ><img src="/WebTechnology/City-Web-Site-Project/Pictures/Facebook.png " width="14%" height="14%"  align="right" ></a>
                 <a href="mailto:ibrahimsaidkavas@gmail.com"><img src="/WebTechnology/City-Web-Site-Project/Pictures/Gmail.png " width="14%" height="14%"   align="right" ></a> 
             </div>
-        </header>
+    </header>
         
 </body>
     <!-- Optional JavaScript -->
